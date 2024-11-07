@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Deploy to Vercel
+- [x] Deploy to Vercel
 - [ ] Scaffold basic ui with mock data
 - [ ] Set up the database (vercel/postgres)
 - [ ] Attach database to the ui

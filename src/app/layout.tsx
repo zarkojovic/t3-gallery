@@ -9,12 +9,24 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+function TopNav() {
+  return (
+    <div className="flex w-full items-center justify-between border-b border-gray-800 p-4">
+      <div className="text-white">Logo</div>
+      <div className="text-white">Sign In</div>
+    </div>
+  );
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <TopNav />
+        {children}
+      </body>
     </html>
   );
 }
